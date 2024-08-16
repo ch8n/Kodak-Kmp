@@ -5,9 +5,6 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 
-sealed class ImageResource {
-    data class Url(val imageUrl: String) : ImageResource()
-}
 
 class KodakImageLoader(
     private val httpClient: HttpClient,
@@ -28,5 +25,3 @@ class KodakImageLoader(
         return imageBitmapFromBytes(imageBytes)
     }
 }
-
-expect fun imageBitmapFromBytes(encodedImageData: ByteArray): ImageBitmap
