@@ -1,3 +1,8 @@
+# Kodak-Kmp
+Image loading library for KMP, supports Android, IOS, Desktop and Web(Wasm)
+
+---
+
 This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
