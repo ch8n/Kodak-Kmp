@@ -1,10 +1,33 @@
-# Kodak-Kmp
-Image loading library for KMP, supports Android, IOS, Desktop and Web(Wasm)
+# Kodak-KMP 📸 - Work In Progress
 
----
+Kodak-KMP is a Kotlin Multiplatform project that implements an image loading library from scratch using Jetpack Compose. This library supports multiple platforms, including Android, iOS, Desktop, and Web (Wasm). It offers efficient, asynchronous image loading with robust caching and memory management mechanisms.
 
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+## 🌍 Supported Platforms
 
+- **Android**
+- **iOS**
+- **Desktop**
+- **Web (Wasm)**
+
+## 🛠 Features
+
+- **Asynchronous Image Loading**: Load images from a URL asynchronously using Ktor and Coroutines.
+- **Jetpack Compose Compatibility**: Seamlessly integrates with Jetpack Compose for modern UI development.
+- **Image Placeholder**: Displays placeholders for both loading and error states to enhance user experience.
+- **Caching Mechanism**: Implements both memory and disk caching to optimize loading times and reduce redundant network calls.
+- **Memory Management**: Efficiently manages memory by avoiding loading high-quality or raw images unnecessarily.
+
+## 🏗 Functional Requirements
+
+1. **Asynchronous Image Loading from URL**: Fetch images from remote servers without blocking the main thread.
+2. **Compatible with Jetpack Compose**: Fully compatible with Jetpack Compose for all target platforms.
+3. **Image Placeholder**: Show placeholders during image loading and in case of loading errors.
+4. **Caching Mechanism**: Utilize both memory and disk caching strategies to store images.
+5. **Memory Management**: Optimize memory usage by preventing the loading of high-quality or raw images when not needed.
+
+## How to use?
+
+### Installation
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
   - `commonMain` is for code that’s common for all targets.
