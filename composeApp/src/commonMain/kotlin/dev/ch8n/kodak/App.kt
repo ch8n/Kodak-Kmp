@@ -39,7 +39,7 @@ fun App() {
             Button(onClick = {
                 scope.launch {
                     try {
-                        val remoteImage = kodakImageLoader.loadImage(ImageResource.Url("https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"))
+                        val remoteImage = kodakImageLoader.loadImage(ImageResource.Url("https://picsum.photos/1000"))
                         image = remoteImage
                     } catch (e:Exception) {
                         Console.error(e.message, e.cause)
