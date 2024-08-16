@@ -47,3 +47,25 @@ We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public S
 If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+
+## 📚 Learn More
+For a detailed explanation of the system design and implementation, please refer to the Medium article that covers all the essential concepts and decisions made during the development of Kodak-KMP.
+
+## 🛡 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+##🙌 Contributions
+Contributions are welcome! Please open an issue or submit a pull request to contribute.
+
+## 📞 Contact
+If you have any questions or feedback, feel free to reach out via social handles
+[LinkedIn](https://bit.ly/ch8n-linkdIn) |
+[Medium](https://bit.ly/ch8n-medium-blog) |
+[Twitter](https://bit.ly/ch8n-twitter) |
+[StackOverflow](https://bit.ly/ch8n-stackOflow) |
+[CodeWars](https://bit.ly/ch8n-codewar) |
+[Portfolio](https://bit.ly/ch8n-home) |
+[Github](https://bit.ly/ch8n-git) |
+[Instagram](https://bit.ly/ch8n-insta) |
+[Youtube](https://bit.ly/ch8n-youtube) 
+ 
