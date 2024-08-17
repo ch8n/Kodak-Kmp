@@ -15,8 +15,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.unit.dp
 import io.ktor.client.*
+import io.ktor.client.utils.*
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.ui.tooling.preview.Preview
+import kotlin.native.concurrent.ThreadLocal
 
 @Composable
 @Preview
@@ -37,7 +40,7 @@ fun App() {
             var image by remember { mutableStateOf<ImageBitmap?>(null) }
 
             Button(onClick = {
-                scope.launch {
+                scope.launch(KodakDispatcher) {
                     try {
                         val remoteImage = kodakImageLoader.loadImage(ImageResource.Url("https://picsum.photos/1000"))
                         image = remoteImage
